@@ -1,4 +1,4 @@
-package icab.juan.cylan.com.cyla;
+package cyla.juan.icab;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +9,12 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class BaceActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bace);
+        setContentView(R.layout.activity_base);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
