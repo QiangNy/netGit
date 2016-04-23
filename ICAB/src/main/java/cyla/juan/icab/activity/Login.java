@@ -14,6 +14,11 @@ public class Login extends BaseActivity{
     public void Create(Bundle savedInstanceState) {
 
         setContentView(R.layout.activity_login);
+        
+        initviews(savedInstanceState);
+    }
+
+    private void initviews(Bundle savedInstanceState) {
     }
 
     @Override

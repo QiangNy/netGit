@@ -3,10 +3,14 @@ package cyla.juan.icab.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.widget.ImageView;
 
+import butterknife.ButterKnife;
+import butterknife.InjectView;
 import cyla.juan.icab.R;
 import cyla.juan.icab.ui.UIHelper;
 
@@ -18,20 +22,22 @@ public class WelcomePage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View view = new View(this);
-        view.setBackgroundResource(R.drawable.bg_logo);
-        setContentView(view);
+        setContentView(R.layout.activity_show);
 
+
+
+
+        ImageView show = (ImageView) findViewById(R.id.show_iv_welcome_falsh);
         //渐变展示启动屏
+
+        show.setImageResource(R.mipmap.bg_logo);
         AlphaAnimation aa = new AlphaAnimation(0.3f, 1.0f);
         aa.setDuration(2000);
-        view.startAnimation(aa);
+        show.startAnimation(aa);
         aa.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationEnd(Animation arg0) {
                 UIHelper.goMainActivity(WelcomePage.this);
-                startActivity(new Intent(WelcomePage.this, Login.class));
-                finish();
             }
 
             @Override
