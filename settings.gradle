@@ -1,1 +1,1 @@
-include ':ICAB'
+include ':ICAB', ':LibICAB'
