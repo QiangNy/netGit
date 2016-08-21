@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CyLa.iml" filepath="$PROJECT_DIR$/CyLa.iml" />
       <module fileurl="file://$PROJECT_DIR$/ICAB/ICAB.iml" filepath="$PROJECT_DIR$/ICAB/ICAB.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibICAB/LibICAB.iml" filepath="$PROJECT_DIR$/LibICAB/LibICAB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netcab.iml" filepath="$PROJECT_DIR$/netcab.iml" />
     </modules>
   </component>
 </project>
