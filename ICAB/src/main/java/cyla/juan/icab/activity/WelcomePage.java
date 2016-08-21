@@ -1,30 +1,22 @@
 package cyla.juan.icab.activity;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.ImageView;
 
-import butterknife.ButterKnife;
-import butterknife.InjectView;
 import cyla.juan.icab.R;
 import cyla.juan.icab.ui.UIHelper;
 
 /**
  * app的欢迎界面
  */
-public class WelcomePage extends Activity {
+public class WelcomePage extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
-
-
 
 
         ImageView show = (ImageView) findViewById(R.id.show_iv_welcome_falsh);

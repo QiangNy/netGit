@@ -4,44 +4,24 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import cyla.juan.icab.interfac.BaseInterface;
-
-public abstract class BaseActivity  extends AppCompatActivity implements  BaseInterface.mBaseInterface{
-
+public class BaseActivity  extends AppCompatActivity {
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        Create(savedInstanceState);
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
     @Override
-    public  void onStart() {
-        Start();
-        super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        Resume();
-        super.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        Pause();
-        super.onPause();
-    }
-
-    @Override
-    public void onStop() {
-        Stop();
+    protected void onStop() {
         super.onStop();
     }
 
     @Override
-    public void onDestroy() {
-        Destroy();
+    protected void onDestroy() {
         super.onDestroy();
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
 }

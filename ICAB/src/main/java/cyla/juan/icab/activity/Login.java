@@ -1,6 +1,7 @@
 package cyla.juan.icab.activity;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 
 import cyla.juan.icab.R;
 
@@ -11,38 +12,29 @@ public class Login extends BaseActivity{
 
 
     @Override
-    public void Create(Bundle savedInstanceState) {
-
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        
+
         initviews(savedInstanceState);
     }
 
+    @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
+
     private void initviews(Bundle savedInstanceState) {
-    }
-
-    @Override
-    public void Start() {
-
-    }
-
-    @Override
-    public void Resume() {
-
-    }
-
-    @Override
-    public void Pause() {
-
-    }
-
-    @Override
-    public void Stop() {
-
-    }
-
-    @Override
-    public void Destroy() {
 
     }
 }
