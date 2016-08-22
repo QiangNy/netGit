@@ -1,22 +1,21 @@
 package cyla.juan.icab.uitls;
 
-import android.os.Handler;
-import android.os.Message;
-
 /**
  * Created by chen on 16-4-21.
  */
-public class MessageCall implements Handler.Callback {
+public class MessageCall  {
 
-    /*private Context mContext;
-
-    MessageCall(Context mContext) {
-        this.mContext = mContext.getApplicationContext();
-    }*/
+   private static MessageCall messageCall;
 
 
-    @Override
-    public boolean handleMessage(Message msg) {
-        return false;
+
+    public static MessageCall getInstance() {
+        if (messageCall == null) {
+            messageCall = new MessageCall();
+        }
+        return messageCall;
     }
+
+
+
 }

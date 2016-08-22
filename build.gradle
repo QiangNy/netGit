@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.0.0'
-
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -34,4 +34,5 @@ ext {
     supportV7   = 'com.android.support:appcompat-v7:23.3.0'
     supportDesign = 'com.android.support:design:23.3.0'
     butterknife = 'com.jakewharton:butterknife:6.1.0'
+    permisionCheck = 'com.github.hotchemi:permissionsdispatcher:2.1.3'
 }
